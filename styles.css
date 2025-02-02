@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #f0f0f5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007aff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f0f0f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contact p {
+    font-size: 1.1rem;
+}
+
+#contact a {
+    font-size: 1.1rem;
+}
+
+#research-areas ul,
+#recent-projects ul,
+#papers ul {
+    font-size: 1.1rem;
+}
+
+#research-areas ul li,
+#recent-projects ul li,
+#papers ul li {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}

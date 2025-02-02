@@ -1,0 +1,72 @@
+{
+  "en": {
+    "name": "Owen Clark",
+    "bio": "I am a researcher in the field of AI and healthcare, focusing on facial expression recognition in elderly people with Alzheimer's disease.",
+    "contact": {
+      "email": "owen.clark@email.com",
+      "phone": "+1234567890"
+    },
+    "researchAreas": [
+      "Deep Learning for Facial Expression Recognition",
+      "Early Detection of Alzheimer's Disease",
+      "Mobile Healthcare Solutions"
+    ],
+    "recentProjects": [
+      {
+        "title": "Facial Expression Recognition for Alzheimer's Detection",
+        "description": "A project focusing on using deep learning to detect early signs of Alzheimer's disease from facial expressions."
+      },
+      {
+        "title": "Mobile Health Monitoring App",
+        "description": "Developing a cost-effective mobile application to monitor elderly people's health in real-time."
+      }
+    ],
+    "papers": [
+      {
+        "title": "Deep Learning Models for Facial Expression Recognition",
+        "journal": "International Journal of AI Research",
+        "year": "2023"
+      },
+      {
+        "title": "AI-Based Early Diagnosis of Alzheimer's Disease",
+        "journal": "Journal of Healthcare Technology",
+        "year": "2024"
+      }
+    ]
+  },
+  "zh": {
+    "name": "Owen Clark",
+    "bio": "我是一名研究员，专注于人工智能与医疗保健领域，特别是面向老年痴呆症患者的面部表情识别。",
+    "contact": {
+      "email": "owen.clark@email.com",
+      "phone": "+1234567890"
+    },
+    "researchAreas": [
+      "面部表情识别的深度学习",
+      "阿尔茨海默病的早期检测",
+      "移动健康解决方案"
+    ],
+    "recentProjects": [
+      {
+        "title": "面部表情识别用于阿尔茨海默病检测",
+        "description": "使用深度学习检测阿尔茨海默病早期迹象的项目。"
+      },
+      {
+        "title": "移动健康监测应用",
+        "description": "开发一种成本效益高的移动应用，实时监测老年人健康。"
+      }
+    ],
+    "papers": [
+      {
+        "title": "面部表情识别的深度学习模型",
+        "journal": "国际人工智能研究期刊",
+        "year": "2023"
+      },
+      {
+        "title": "基于人工智能的阿尔茨海默病早期诊断",
+        "journal": "医疗保健技术期刊",
+        "year": "2024"
+      }
+    ]
+  }
+}
