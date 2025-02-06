@@ -50,13 +50,13 @@
       {
         "title": "面部表情识别用于阿尔茨海默病检测",
         "description": "使用深度学习检测阿尔茨海默病早期迹象的项目。",
-        "image":"src/image1.jpg"
+        "image":"./src/image1.jpg"
 
       },
       {
         "title": "移动健康监测应用",
         "description": "开发一种成本效益高的移动应用，实时监测老年人健康。",
-        "image":"src/image2.jpg"
+        "image":"./src/image2.jpg"
       }
     ],
     "papers": [
