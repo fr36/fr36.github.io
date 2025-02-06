@@ -15,10 +15,10 @@ fetch('config.json')
       document.getElementById('phone').textContent = langData.contact.phone;
 
       // 更新页面标题
-      document.querySelector('h2#contact').textContent = lang === 'zh' ? '联系' : 'Contact';
-      document.querySelector('h2#research-areas').textContent = lang === 'zh' ? '研究领域' : 'Research Areas';
-      document.querySelector('h2#recent-projects').textContent = lang === 'zh' ? '近期项目' : 'Recent Projects';
-      document.querySelector('h2#papers').textContent = lang === 'zh' ? '已发表论文' : 'Published Papers';
+      document.getElementById('contact-title').textContent = lang === 'zh' ? '联系' : 'Contact';
+      document.getElementById('research-areas-title').textContent = lang === 'zh' ? '研究领域' : 'Research Areas';
+      document.getElementById('recent-projects-title').textContent = lang === 'zh' ? '近期项目' : 'Recent Projects';
+      document.getElementById('papers-title').textContent = lang === 'zh' ? '已发表论文' : 'Published Papers';
 
       // 更新研究领域
       const researchList = document.getElementById('research-list');
