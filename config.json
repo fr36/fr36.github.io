@@ -1,24 +1,25 @@
 {
   "en": {
     "name": "Xuantao Nie",
-    "bio": "I am a researcher in the field of AI and healthcare, focusing on facial expression recognition in elderly people with Alzheimer's disease.",
+    "bio": "A graduate student majoring in facial expression recognition; Java development.",
     "contact": {
-      "email": "owen.clark@email.com",
-      "phone": "+1234567890"
+      "email": "xtnie2019@163.com",
+      "phone": "13337258371"
     },
     "researchAreas": [
       "Deep Learning for Facial Expression Recognition",
-      "Early Detection of Alzheimer's Disease",
-      "Mobile Healthcare Solutions"
+      "Early Detection of Mild Cognitive Impairment in the Elderly Using Computer Vision"
     ],
     "recentProjects": [
       {
         "title": "Facial Expression Recognition for Alzheimer's Detection",
-        "description": "A project focusing on using deep learning to detect early signs of Alzheimer's disease from facial expressions."
+        "description": "A project focusing on using deep learning to detect early signs of Alzheimer's disease from facial expressions.",
+        "image": "src/image1.jpg"
       },
       {
         "title": "Mobile Health Monitoring App",
-        "description": "Developing a cost-effective mobile application to monitor elderly people's health in real-time."
+        "description": "Developing a cost-effective mobile application to monitor the health of the elderly in real-time.",
+        "image": "src/image2.jpg"
       }
     ],
     "papers": [
