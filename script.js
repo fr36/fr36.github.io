@@ -1,4 +1,4 @@
-let currentLang = 'en'; // 默认语言是英文
+let currentLang = 'zh'; // 默认语言是英文
 
 // 加载配置文件
 fetch('config.json')

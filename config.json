@@ -1,6 +1,6 @@
 {
   "en": {
-    "name": "Owen Clark",
+    "name": "Xuantao Nie",
     "bio": "I am a researcher in the field of AI and healthcare, focusing on facial expression recognition in elderly people with Alzheimer's disease.",
     "contact": {
       "email": "owen.clark@email.com",
@@ -35,16 +35,15 @@
     ]
   },
   "zh": {
-    "name": "Owen Clark",
-    "bio": "我是一名研究员，专注于人工智能与医疗保健领域，特别是面向老年痴呆症患者的面部表情识别。",
+    "name": "Xuantao Nie",
+    "bio": "在读研究生，主要研究方向为面部表情识别；Java开发。",
     "contact": {
-      "email": "owen.clark@email.com",
-      "phone": "+1234567890"
+      "email": "xtnie2019@163.com",
+      "phone": "13337258371"
     },
     "researchAreas": [
       "面部表情识别的深度学习",
-      "阿尔茨海默病的早期检测",
-      "移动健康解决方案"
+      "基于计算机视觉的老年人轻度认知障碍检测"
     ],
     "recentProjects": [
       {
