@@ -34,7 +34,11 @@ fetch('config.json')
       projectsList.innerHTML = '';
       langData.recentProjects.forEach(project => {
         const li = document.createElement('li');
-        li.innerHTML = `<strong>${project.title}</strong><p>${project.description}</p>`;
+        li.innerHTML = `
+          <img src="${project.image}" alt="${project.title}" style="max-width: 100%; height: auto;">
+          <strong>${project.title}</strong>
+          <p>${project.description}</p>
+        `;
         projectsList.appendChild(li);
       });
 
