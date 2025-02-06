@@ -14,12 +14,12 @@
       {
         "title": "Facial Expression Recognition for Alzheimer's Detection",
         "description": "A project focusing on using deep learning to detect early signs of Alzheimer's disease from facial expressions.",
-        "image": "src/image1.jpg"
+        "image": "./src/image1.jpg"
       },
       {
         "title": "Mobile Health Monitoring App",
         "description": "Developing a cost-effective mobile application to monitor the health of the elderly in real-time.",
-        "image": "src/image2.jpg"
+        "image": "./src/image2.jpg"
       }
     ],
     "papers": [
