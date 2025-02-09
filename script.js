@@ -6,13 +6,16 @@ fetch('config.json')
   .then(data => {
     const updateContent = (lang) => {
       const langData = data[lang];
+      const sharedData = data.shared;  // 获取共享数据
 
       // 更新个人信息
       document.getElementById('name').textContent = langData.name;
       document.getElementById('bio').textContent = langData.bio;
-      document.getElementById('email').href = `mailto:${langData.contact.email}`;
-      document.getElementById('email').textContent = langData.contact.email;
-      document.getElementById('phone').textContent = langData.contact.phone;
+      
+      // 使用 sharedData 中的联系方式
+      document.getElementById('email').href = `mailto:${sharedData.contact.email}`;
+      document.getElementById('email').textContent = sharedData.contact.email;
+      document.getElementById('phone').textContent = sharedData.contact.phone;
 
       // 更新页面标题
       document.getElementById('contact-title').textContent = lang === 'zh' ? '联系' : 'Contact';
