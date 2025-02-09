@@ -1,70 +1,66 @@
 {
-  "en": {
-    "name": "Xuantao Nie",
-    "bio": "A graduate student majoring in facial expression recognition; Java development.",
+  "shared": {
     "contact": {
       "email": "xtnie2019@163.com",
       "phone": "13337258371"
     },
+    "projectLinks": {
+      "hmall": "https://github.com/username/hmall",
+      "hmdp": "https://github.com/username/hmdp"
+    }
+  },
+  "en": {
+    "name": "Xuantao Nie",
+    "bio": "A graduate student majoring in facial expression recognition; Java development.",
     "researchAreas": [
       "Deep Learning for Facial Expression Recognition",
       "Early Detection of Mild Cognitive Impairment in the Elderly Using Computer Vision"
     ],
     "recentProjects": [
       {
-        "title": "Facial Expression Recognition for Alzheimer's Detection",
-        "description": "A project focusing on using deep learning to detect early signs of Alzheimer's disease from facial expressions.",
-        "image": "./src/image1.jpg"
+        "title": "Hmall E-commerce Platform",
+        "description": "An online shopping platform providing features such as product browsing, ordering, and payment. Built on SpringCloud microservices architecture with vertical business splitting into microservices including: user service, product service, order service, shopping cart service, and payment service. Uses Nacos for service governance and RabbitMQ for asynchronous communication.",
+        "image": "./src/hmall.png",
+        "linkKey": "hmall"
       },
       {
-        "title": "Mobile Health Monitoring App",
-        "description": "Developing a cost-effective mobile application to monitor the health of the elderly in real-time.",
-        "image": "./src/image2.jpg"
+        "title": "Hmdp Review Platform",
+        "description": "A front-end and back-end separated project developed with SpringBoot, utilizing Redis cluster, Tomcat cluster, and MySQL cluster to enhance service performance. Similar to Dianping, it implements features such as SMS login, merchant query caching, and coupon flash sales. Notably implements one-person-one-order functionality using distributed locks.",
+        "image": "./src/hmdp.png",
+        "linkKey": "hmdp"
       }
     ],
     "papers": [
       {
-        "title": "Deep Learning Models for Facial Expression Recognition",
-        "journal": "International Journal of AI Research",
-        "year": "2023"
-      },
-      {
-        "title": "AI-Based Early Diagnosis of Alzheimer's Disease",
-        "journal": "Journal of Healthcare Technology",
-        "year": "2024"
+        "title": "Not available yet (-_-)"
       }
     ]
   },
   "zh": {
     "name": "Xuantao Nie",
     "bio": "在读研究生，主要研究方向为面部表情识别；Java开发。",
-    "contact": {
-      "email": "xtnie2019@163.com",
-      "phone": "13337258371"
-    },
     "researchAreas": [
       "面部表情识别的深度学习",
       "基于计算机视觉的老年人轻度认知障碍检测"
     ],
     "recentProjects": [
       {
-        "title": "面部表情识别用于阿尔茨海默病检测",
-        "description": "使用深度学习检测阿尔茨海默病早期迹象的项目。",
-        "image":"./src/image1.jpg"
-
+        "title": "黑马商城",
+        "description": "网上购物平台，提供商品游览、下单、支付等功能，基于SpringCloud微服务架构，业务按照纵向拆分，可以分为以下几个微服务：用户服务、商品服务、订单服务、购物车服务和支付服务，Nacos进行服务治理，RabbitMQ实现服务异步通讯",
+        "image": "./src/hmall.png",
+        "linkKey": "hmall"
       },
       {
-        "title": "移动健康监测应用",
-        "description": "开发一种成本效益高的移动应用，实时监测老年人健康。",
-        "image":"./src/image2.jpg"
+        "title": "黑马点评",
+        "description": "一个springboot开发的前后端分离项目，使用了redis集群、tomcat集群、MySQL集群提高服务性能。类似于大众点评，实现了短信登录、商户查询缓存、优惠卷秒杀等功能。其中重点使用了分布式锁实现了一人一单功能",
+        "image": "./src/hmdp.png",
+        "linkKey": "hmdp"
       }
     ],
     "papers": [
       {
         "title": "暂时还没有（-_-)"
-        
       }
-      
     ]
   }
 }

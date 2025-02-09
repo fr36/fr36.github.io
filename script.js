@@ -34,10 +34,13 @@ fetch('config.json')
       projectsList.innerHTML = '';
       langData.recentProjects.forEach(project => {
         const li = document.createElement('li');
+        const projectLink = data.shared.projectLinks[project.linkKey];
         li.innerHTML = `
-          <img src="${project.image}" alt="${project.title}" style="max-width: 100%; height: auto;">
-          <strong>${project.title}</strong>
-          <p>${project.description}</p>
+          <a href="${projectLink}" target="_blank" class="project-card">
+            <img src="${project.image}" alt="${project.title}" style="max-width: 100%; height: auto;">
+            <strong>${project.title}</strong>
+            <p>${project.description}</p>
+          </a>
         `;
         projectsList.appendChild(li);
       });
