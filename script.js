@@ -41,7 +41,7 @@ fetch('config.json')
           const projectLink = data.shared.projectLinks[project.linkKey];
           li.innerHTML = `
             <a href="${projectLink}" target="_blank" class="project-card">
-              <img src="${project.image}" alt="${project.title}" style="max-width: 100%; height: auto;">
+              <img src="${project.image}" alt="${project.title}">
               <strong>${project.title}</strong>
               <p>${project.description}</p>
             </a>
