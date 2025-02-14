@@ -59,8 +59,8 @@
       },
       {
         "title": "深度表情识别实验",
-        "description": "使用了FER2013数据集，使用了多个 sota模型进行实验",
-        "image": "./src/fer.png",
+        "description": "使用了FER2013、RAF-DB 等数据集，使用了多个 sota模型进行实验",
+        "image": "./src/fer_image.png",
         "linkKey": "fer"
       }
     ],
