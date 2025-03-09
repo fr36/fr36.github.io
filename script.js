@@ -20,7 +20,7 @@ fetch('config.json')
 
         // 更新页面标题
         document.getElementById('contact-title').textContent = lang === 'zh' ? '联系' : 'Contact';
-        document.getElementById('research-areas-title').textContent = lang === 'zh' ? '研究领域' : 'Research Areas';
+        document.getElementById('research-areas-title').textContent = lang === 'zh' ? '在校研究领域' : 'In-School Research Areas';
         document.getElementById('recent-projects-title').textContent = lang === 'zh' ? '近期项目' : 'Recent Projects';
         document.getElementById('papers-title').textContent = lang === 'zh' ? '已发表论文' : 'Published Papers';
 
@@ -41,9 +41,12 @@ fetch('config.json')
           const projectLink = data.shared.projectLinks[project.linkKey];
           li.innerHTML = `
             <a href="${projectLink}" target="_blank" class="project-card">
-              <img src="${project.image}" alt="${project.title}">
+              <div class="img-container">
+                <img src="${project.image}" alt="${project.title}" onload="adjustImageClass(this)">
+              </div>
               <strong>${project.title}</strong>
               <p>${project.description}</p>
+              <div class="tooltip">${project.description}</div>
             </a>
           `;
           projectsList.appendChild(li);
@@ -80,3 +83,20 @@ fetch('config.json')
   .catch(error => {
     console.error('Error loading config:', error);
   });
+
+// 根据图片的长宽比调整类
+function adjustImageClass(img) {
+  if (img.naturalWidth > img.naturalHeight * 1.2) {
+    // 宽图
+    img.classList.add('landscape');
+    img.classList.remove('portrait');
+  } else if (img.naturalHeight > img.naturalWidth * 1.2) {
+    // 高图
+    img.classList.add('portrait');
+    img.classList.remove('landscape');
+  } else {
+    // 接近正方形的图片
+    img.classList.remove('landscape');
+    img.classList.remove('portrait');
+  }
+}

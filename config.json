@@ -26,9 +26,15 @@
       },
       {
         "title": "Hmdp Review Platform",
-        "description": "A front-end and back-end separated project developed with SpringBoot, utilizing Redis cluster, Tomcat cluster, and MySQL cluster to enhance service performance. Similar to Dianping, it implements features such as SMS login, merchant query caching, and coupon flash sales. Notably implements one-person-one-order functionality using distributed locks.",
+        "description": "A front-end and back-end separated project developed with SpringBoot, utilizing Redis, Tomcat, and MySQL to enhance service performance. Similar to Dianping, it implements features such as SMS login, merchant query caching, and coupon flash sales. Notably implements one-person-one-order functionality using distributed locks.",
         "image": "./src/hmdp.png",
         "linkKey": "hmdp"
+      },
+      {
+        "title": "Facial Expression Recognition Experiment",
+        "description": "Uses the FER2013 and RAF-DB datasets, designs its own models for experiments, covering the model itself, training logs, and test results.",
+        "image": "./src/fer_image.png",
+        "linkKey": "fer"
       }
     ],
     "papers": [
@@ -53,13 +59,13 @@
       },
       {
         "title": "黑马点评",
-        "description": "一个springboot开发的前后端分离项目，使用了redis集群、tomcat集群、MySQL集群提高服务性能。类似于大众点评，实现了短信登录、商户查询缓存、优惠卷秒杀等功能。其中重点使用了分布式锁实现了一人一单功能",
+        "description": "一个springboot开发的前后端分离项目，使用了redis、MySQL提高服务性能。类似于大众点评，实现了短信登录、商户查询缓存、优惠卷秒杀等功能。其中重点使用了分布式锁实现了一人一单功能",
         "image": "./src/hmdp.png",
         "linkKey": "hmdp"
       },
       {
         "title": "深度表情识别实验",
-        "description": "使用了FER2013、RAF-DB 等数据集，使用了多个 sota模型进行实验",
+        "description": "使用了FER2013、RAF-DB 等数据集，自己设计模型进行实验，涵盖了模型本体，训练 logs，测试结果等",
         "image": "./src/fer_image.png",
         "linkKey": "fer"
       }
