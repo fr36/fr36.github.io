@@ -4,35 +4,99 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+    --text-light: #64748b;
+    --card-bg: #ffffff;
+    --header-bg: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 header {
-    background-color: #f0f0f5;
-    padding: 60px 20px;
+    background: var(--header-bg);
+    padding: 80px 20px;
     text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background-size: cover;
+    opacity: 0.6;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 header p {
-    font-size: 1.1rem;
-    color: #666;
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 section {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    background: var(--card-bg);
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+section:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
 }
 
 ul {
@@ -42,56 +106,208 @@ ul {
 
 li {
     font-size: 1.1rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: var(--background-color);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+li:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-sm);
 }
 
 a {
-    color: #007aff;
+    color: var(--primary-color);
     text-decoration: none;
+    transition: var(--transition);
 }
 
-footer {
-    background-color: #f0f0f5;
-    padding: 20px;
-    text-align: center;
+a:hover {
+    color: var(--secondary-color);
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+#contact {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
 #contact p {
-    font-size: 1.1rem;
-}
-
-#contact a {
-    font-size: 1.1rem;
-}
-
-#research-areas ul,
-#recent-projects ul,
-#papers ul {
-    font-size: 1.1rem;
-}
-
-#research-areas ul li,
-#recent-projects ul li,
-#papers ul li {
+    font-size: 1.2rem;
     margin-bottom: 15px;
 }
 
+#research-areas ul li,
+#papers ul li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+}
+
+#research-areas ul li::before,
+#papers ul li::before {
+    content: '•';
+    margin-right: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* 移除研究领域和论文列表的悬停效果 */
+#research-areas ul li:hover,
+#papers ul li:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
+}
+
+/* 保持项目列表的交互效果 */
+#recent-projects ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: var(--background-color);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+#recent-projects ul li:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-sm);
+}
+
+#recent-projects ul li::before {
+    content: '→';
+    margin-right: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+footer {
+    background: var(--text-color);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container {
+        width: 95%;
+    }
+    
+    section {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    li {
+        font-size: 1rem;
+    }
+}
+
+/* 添加一些动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+section:nth-child(2) { animation-delay: 0.2s; }
+section:nth-child(3) { animation-delay: 0.4s; }
+section:nth-child(4) { animation-delay: 0.6s; }
+section:nth-child(5) { animation-delay: 0.8s; }
+
 button {
-    background-color: #007aff;
+    background-color: var(--primary-color);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin: 10px;
     cursor: pointer;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
 }
 
 button:hover {
-    background-color: #005bb5;
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* 语言切换按钮的特殊样式 */
+#en-btn, #zh-btn {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: white;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    margin: 5px;
+    backdrop-filter: blur(5px);
+}
+
+#en-btn:hover, #zh-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: white;
+    transform: translateY(-2px);
+}
+
+#en-btn::before, #zh-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+#en-btn:hover::before, #zh-btn:hover::before {
+    left: 100%;
+}
+
+/* 当前选中的语言按钮样式 */
+button.active-lang {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: white;
 }
 
 #projects-list {
@@ -116,7 +332,7 @@ button:hover {
 
 .project-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .project-card .img-container {
