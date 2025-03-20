@@ -7,7 +7,8 @@
     "projectLinks": {
       "hmall": "https://github.com/fr36/hmall",
       "hmdp": "https://github.com/fr36/hm-dianping",
-      "fer": "https://gitee.com/fr3534houre/mynet"
+      "fer": "https://gitee.com/fr3534houre/mynet",
+      "acdamic_search": "https://gitee.com/fr3534houre/acdamic_search"
     }
   },
   "en": {
@@ -40,7 +41,7 @@
         "title": "Academic Research Interaction System",
         "description": "Accurate Literature Retrieval: Implementing efficient literature search using the Elsevier Scopus API; Intelligent Question-Answering System: Utilizing DeepSeek API to implement intelligent question-answering based on literature content; Context Binding: Users can select multiple articles and use their abstracts as context for questions; Conversation Record: Supports saving question-answering history and recording related literature information.",
         "image": "./src/acdamic_research.png",
-        "linkKey": "https://gitee.com/fr3534houre/acdamic_search"
+        "linkKey": "acdamic_search"
       }
     ],
     "papers": [
@@ -79,7 +80,7 @@
         "title": "智能文献交互系统",
         "description": "精确文献检索：基于Elsevier Scopus API实现高效文献搜索；智能问答系统：利用DeepSeek API实现基于文献内容的智能问答；上下文绑定：用户可以选择多篇文献并将其摘要作为上下文进行问答；会话记录：支持保存问答历史，并记录相关文献信息",
         "image": "./src/acdamic_research.png",
-        "linkKey": "https://gitee.com/fr3534houre/acdamic_search"
+        "linkKey": "acdamic_search"
       }
 
     ],
