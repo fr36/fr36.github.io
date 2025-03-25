@@ -62,9 +62,9 @@ header p {
 }
 
 section {
-    padding: 60px 20px;
+    padding: 30px 20px;
     background: var(--card-bg);
-    margin: 20px 0;
+    margin: 15px 0;
     border-radius: 12px;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
@@ -81,11 +81,11 @@ section:hover {
 }
 
 h2 {
-    font-size: 2.2rem;
-    margin-bottom: 30px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
     color: var(--text-color);
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
 h2::after {
@@ -93,8 +93,8 @@ h2::after {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60px;
-    height: 4px;
+    width: 50px;
+    height: 3px;
     background: var(--primary-color);
     border-radius: 2px;
 }
@@ -133,20 +133,17 @@ a:hover {
 }
 
 #contact p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
 #research-areas ul li,
 #papers ul li {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    padding: 15px;
     background: var(--card-bg);
+    padding: 12px 15px;
+    margin-bottom: 12px;
     border-radius: 8px;
     box-shadow: var(--shadow-sm);
-    display: flex;
-    align-items: center;
 }
 
 #research-areas ul li::before,
@@ -158,9 +155,49 @@ a:hover {
     font-size: 1.5rem;
 }
 
-/* 移除研究领域和论文列表的悬停效果 */
+/* 校园经历样式 */
+#experience-list li {
+    background: var(--card-bg);
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+#experience-list .experience-period {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
+#experience-list .experience-title {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+}
+
+#experience-list .experience-description {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* 只保留项目卡片的交互效果 */
+.project-card {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* 移除非链接元素的悬停效果 */
 #research-areas ul li:hover,
-#papers ul li:hover {
+#papers ul li:hover,
+#experience-list li:hover {
     transform: none;
     box-shadow: var(--shadow-sm);
 }
@@ -217,7 +254,8 @@ footer {
     }
     
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
     }
     
     li {
@@ -437,5 +475,110 @@ button.active-lang {
 @media (max-width: 480px) {
     #projects-list {
         grid-template-columns: 1fr;
+    }
+}
+
+/* 联系方式和教育经历的网格布局 */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.info-grid section {
+    margin: 0;
+}
+
+/* 教育经历样式 */
+#education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#education-list li {
+    background: var(--card-bg);
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: none;
+    cursor: default;
+}
+
+#education-list li:last-child {
+    margin-bottom: 0;
+}
+
+#education-list .education-period {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+}
+
+#education-list .education-school {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+}
+
+#education-list .education-major,
+#education-list .education-details {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
+
+#education-list .education-details {
+    margin-bottom: 0;
+}
+
+/* 调整联系方式和教育经历容器的样式 */
+.info-grid section {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+/* 确保所有非交互元素没有悬停效果 */
+.info-grid section:hover,
+#education-list li:hover,
+#research-areas ul li:hover,
+#papers ul li:hover,
+#experience-list li:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
+    cursor: default;
+}
+
+/* 个人评价样式 */
+#evaluation-content {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    line-height: 1.8;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+/* 响应式布局调整 */
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    #education-list li,
+    #experience-list li {
+        padding: 15px;
+    }
+    
+    #evaluation-content {
+        padding: 20px;
     }
 }

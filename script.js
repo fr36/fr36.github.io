@@ -29,9 +29,27 @@ fetch('config.json')
 
                 // 更新页面标题
                 document.getElementById('contact-title').textContent = lang === 'zh' ? '联系' : 'Contact';
+                document.getElementById('education-title').textContent = lang === 'zh' ? '教育经历' : 'Education';
                 document.getElementById('research-areas-title').textContent = lang === 'zh' ? '在校研究领域' : 'In-School Research Areas';
                 document.getElementById('recent-projects-title').textContent = lang === 'zh' ? '近期项目' : 'Recent Projects';
+                document.getElementById('campus-experience-title').textContent = lang === 'zh' ? '校园经历' : 'Campus Experience';
                 document.getElementById('papers-title').textContent = lang === 'zh' ? '已发表论文' : 'Published Papers';
+                document.getElementById('self-evaluation-title').textContent = lang === 'zh' ? '个人评价' : 'Self Evaluation';
+
+                // 更新教育经历
+                const educationList = document.getElementById('education-list');
+                educationList.innerHTML = '';
+                langData.education.forEach(edu => {
+                    const li = document.createElement('li');
+                    const details = [
+                        `<div class="education-period">${edu.period}</div>`,
+                        `<div class="education-school">${edu.school}</div>`,
+                        edu.major ? `<div class="education-major">${edu.major}</div>` : '',
+                        edu.details ? `<div class="education-details">${edu.details}</div>` : ''
+                    ].filter(Boolean).join('');
+                    li.innerHTML = details;
+                    educationList.appendChild(li);
+                });
 
                 // 更新研究领域
                 const researchList = document.getElementById('research-list');
@@ -61,6 +79,20 @@ fetch('config.json')
                     projectsList.appendChild(li);
                 });
 
+                // 更新校园经历
+                const experienceList = document.getElementById('experience-list');
+                experienceList.innerHTML = '';
+                langData.campusExperience.forEach(exp => {
+                    const li = document.createElement('li');
+                    const details = [
+                        exp.period ? `<div class="experience-period">${exp.period}</div>` : '',
+                        exp.title ? `<div class="experience-title">${exp.title}</div>` : '',
+                        exp.description ? `<div class="experience-description">${exp.description}</div>` : ''
+                    ].filter(Boolean).join('');
+                    li.innerHTML = details;
+                    experienceList.appendChild(li);
+                });
+
                 // 更新发表论文
                 const papersList = document.getElementById('papers-list');
                 papersList.innerHTML = '';
@@ -69,6 +101,10 @@ fetch('config.json')
                     li.textContent = paper.title;
                     papersList.appendChild(li);
                 });
+
+                // 更新个人评价
+                const evaluationContent = document.getElementById('evaluation-content');
+                evaluationContent.textContent = langData.selfEvaluation;
 
             } catch (error) {
                 console.error('Error updating content:', error);

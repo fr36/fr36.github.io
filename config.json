@@ -14,6 +14,19 @@
   "en": {
     "name": "Xuantao Nie",
     "bio": "A graduate student majoring in facial expression recognition; Java development.",
+    "education": [
+      {
+        "period": "2024 - Present",
+        "school": "Shanghai University",
+        "major": "Computer Science and Technology, Master's Degree",
+        "details": "Research focus on Computer Vision and Deep Learning"
+      },
+      {
+        "period": "2019 - 2023",
+        "school": "Nanjing Tech University",
+        "major": "Bachelor's Degree"
+      }
+    ],
     "researchAreas": [
       "Deep Learning for Facial Expression Recognition",
       "Early Detection of Mild Cognitive Impairment in the Elderly Using Computer Vision"
@@ -44,15 +57,41 @@
         "linkKey": "acdamic_search"
       }
     ],
+    "campusExperience": [
+      {
+        "period": "2024 - Present",
+        "title": "Innovation and Entrepreneurship Association Officer",
+        "description": "Served as an officer in the Student Union's Network Information Department, responsible for maintaining and operating the school's official website and WeChat public account. Provided technical support for school activities, including equipment backend operations, network technology, graphic design, and video post-production."
+      },
+      {
+        "period": "2024 - 2025",
+        "title": "Course Teaching Assistant",
+        "description": "Assisted in course preparation and student guidance"
+      }
+    ],
     "papers": [
       {
         "title": "Not available yet (-_-)"
       }
-    ]
+    ],
+    "selfEvaluation": "Goal-oriented personality with keen problem insight and efficient problem-solving abilities. Skilled at identifying key issues in complex situations and developing innovative solutions. Emphasizes experience summarization and continuous learning, able to quickly adapt to new environments while maintaining a learning mindset."
   },
   "zh": {
     "name": "Xuantao Nie",
     "bio": "在读研究生，主要研究方向为面部表情识别；Java开发。",
+    "education": [
+      {
+        "period": "2024 - 至今",
+        "school": "上海大学",
+        "major": "计算机科学与技术，硕士研究生",
+        "details": "研究方向：计算机视觉与深度学习"
+      },
+      {
+        "period": "2019 - 2023",
+        "school": "南京工业大学",
+        "major": "学士学位"
+      }
+    ],
     "researchAreas": [
       "面部表情识别的深度学习",
       "基于计算机视觉的老年人轻度认知障碍检测"
@@ -82,12 +121,24 @@
         "image": "./src/acdamic_research.png",
         "linkKey": "acdamic_search"
       }
-
+    ],
+    "campusExperience": [
+      {
+        "period": "2024 - 至今",
+        "title": "学院创新创业协会部门干事",
+        "description": "在校期间任学生会网络信息部干事,负责学校官方网站、微信公众号的维护和运营。 2. 负责为学校活动进行技术支持,包括设备后台操作、网络技术、平面设计、视频后期制作等"
+      },
+      {
+        "period": "2024 - 2025",
+        "title": "课程助教",
+        "description": "协助课程准备和学生指导工作"
+      }
     ],
     "papers": [
       {
         "title": "暂时还没有（-_-)"
       }
-    ]
+    ],
+    "selfEvaluation": "目标导向型人格，具有敏锐的问题洞察力和高效的解决能力。善于从复杂情境中定位关键问题，制定创新解决方案。注重经验总结和持续学习，能够迅速适应新环境并保持学习"
   }
 }
