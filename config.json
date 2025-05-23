@@ -33,13 +33,13 @@
     ],
     "recentProjects": [
       {
-        "title": "Hmall E-commerce Platform",
+        "title": "Hmall",
         "description": "An online shopping platform providing features such as product browsing, ordering, and payment. Built on SpringCloud microservices architecture with vertical business splitting into microservices including: user service, product service, order service, shopping cart service, and payment service. Uses Nacos for service governance and RabbitMQ for asynchronous communication.",
         "image": "./src/hmall.png",
         "linkKey": "hmall"
       },
       {
-        "title": "Hmdp Review Platform",
+        "title": "Hmdp",
         "description": "A front-end and back-end separated project developed with SpringBoot, utilizing Redis, Tomcat, and MySQL to enhance service performance. Similar to Dianping, it implements features such as SMS login, merchant query caching, and coupon flash sales. Notably implements one-person-one-order functionality using distributed locks.",
         "image": "./src/hmdp.png",
         "linkKey": "hmdp"
@@ -98,7 +98,7 @@
     ],
     "recentProjects": [
       {
-        "title": "黑马商城",
+        "title": "HMALL",
         "description": "网上购物平台，提供商品游览、下单、支付等功能，基于SpringCloud微服务架构，业务按照纵向拆分，可以分为以下几个微服务：用户服务、商品服务、订单服务、购物车服务和支付服务，Nacos进行服务治理，RabbitMQ实现服务异步通讯",
         "image": "./src/hmall.png",
         "linkKey": "hmall"
