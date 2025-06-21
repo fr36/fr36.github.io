@@ -39,8 +39,8 @@
         "linkKey": "hmall"
       },
       {
-        "title": "Hmdp",
-        "description": "A front-end and back-end separated project developed with SpringBoot, utilizing Redis, Tomcat, and MySQL to enhance service performance. Similar to Dianping, it implements features such as SMS login, merchant query caching, and coupon flash sales. Notably implements one-person-one-order functionality using distributed locks.",
+        "title": "EduBoost Online Education Platform",
+        "description": "An online learning and skill enhancement platform implementing features like course caching, flash sales, and leaderboards. It optimizes performance and concurrency using multi-level caching, Redisson distributed locks, and Redis Sorted Sets, while enhancing user experience through token auto-renewal.",
         "image": "./src/hmdp.png",
         "linkKey": "hmdp"
       },
@@ -104,8 +104,8 @@
         "linkKey": "hmall"
       },
       {
-        "title": "黑马点评",
-        "description": "一个springboot开发的前后端分离项目，使用了redis、MySQL提高服务性能。类似于大众点评，实现了短信登录、商户查询缓存、优惠卷秒杀等功能。其中重点使用了分布式锁实现了一人一单功能",
+        "title": "EduBoost在线教育平台",
+        "description": "在线学习与技能提升平台。通过多级缓存（解决缓存穿透、击穿、雪崩），Redisson分布式锁+CAS（实现高并发秒杀），Redis ZSet（实现实时学习排行）以及双层拦截器和Token自动续期（优化登录体验）等技术，保证了系统的高性能和高可用性。",
         "image": "./src/hmdp.png",
         "linkKey": "hmdp"
       },
