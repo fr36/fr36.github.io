@@ -40,7 +40,7 @@
       },
       {
         "title": "CityLife Smart Living Platform",
-        "description": "An intelligent lifestyle service platform for urban residents, integrating merchant discovery, community sharing, promotional activities, and social interaction. Features caching architecture, high-concurrency flash sales system, and social networking functionalities with Redis-based real-time interactions.",
+        "description": "An intelligent lifestyle service platform for urban residents, integrating merchant discovery, community sharing, promotional activities, and social interaction. Features innovative token bucket algorithm for flash sales (300% QPS improvement), multi-level caching with Bloom filters, and social networking functionalities.",
         "image": "./src/hmdp.png",
         "linkKey": "hmdp"
       },
@@ -105,7 +105,7 @@
       },
       {
         "title": "CityLife轻生活服务平台",
-        "description": "面向城市居民的智能生活服务平台，集成商户发现、社区分享、优惠活动、社交互动等功能。通过缓存架构+布隆过滤器（数据库压力降低85%），Redis预扣库存+分布式锁（支持万级并发），Redis ZSet实现社交互动和个性化推荐等技术，构建高性能城市生活服务生态。",
+        "description": "面向城市居民的智能生活服务平台，集成商户发现、社区分享、优惠活动、社交互动等功能。创新性令牌桶算法（QPS提升300%），多层缓存+布隆过滤器（数据库压力降低85%），异步秒杀处理（支持2.5万级并发），Redis ZSet社交互动等技术，构建高性能城市生活服务生态。",
         "image": "./src/hmdp.png",
         "linkKey": "hmdp"
       },
