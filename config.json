@@ -8,7 +8,8 @@
       "hmall": "https://gitee.com/fr3534houre/hmall",
       "hmdp": "https://gitee.com/fr3534houre/hm-dianping",
       "fer": "https://gitee.com/fr3534houre/mynet",
-      "acdamic_search": "https://gitee.com/fr3534houre/acdamic_search"
+      "acdamic_search": "https://gitee.com/fr3534houre/acdamic_search",
+      "review": "https://proceedings.mlr.press/v278/nie25a.html"
     }
   },
   "en": {
@@ -136,7 +137,8 @@
     ],
     "papers": [
       {
-        "title": "A Review of Dynamic Facial Expression Recognition: Methods, Datasets and Directions"
+        "title": "A Review of Dynamic Facial Expression Recognition: Methods, Datasets and Directions",
+        "linkKey": "review"
       }
     ],
     "selfEvaluation": "目标导向型人格，具有敏锐的问题洞察力和高效的解决能力。善于从复杂情境中定位关键问题，制定创新解决方案。注重经验总结和持续学习，能够迅速适应新环境并保持学习"
