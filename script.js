@@ -98,7 +98,12 @@ fetch('config.json')
                 papersList.innerHTML = '';
                 langData.papers.forEach(paper => {
                     const li = document.createElement('li');
-                    li.textContent = paper.title;
+                    const paperLink = sharedData && sharedData.projectLinks ? sharedData.projectLinks[paper.linkKey] : undefined;
+                    if (paperLink) {
+                        li.innerHTML = `<a href="${paperLink}" target="_blank">${paper.title}</a>`;
+                    } else {
+                        li.textContent = paper.title;
+                    }
                     papersList.appendChild(li);
                 });
 
